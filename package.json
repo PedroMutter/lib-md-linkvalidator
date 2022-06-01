@@ -1,15 +1,28 @@
 {
-  "name": "lib-markdown",
+  "name": "lib-md-linkvalidator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Library that can detect and validate links in .md files",
+  "main": "./cli.js",
+  "bin": {
+    "<lib-md-linkvalidator>": "./cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "test": "jest ./test",
-    "cli": "node cli.js ./arquivos/texto1.md"
+    "cli": "node cli.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estev3s/lib-md-linkvalidator"
+  },
+  "author": "estev3s <pedro.mutter1@gmail.com> (https://github.com/estev3s)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/estev3s/lib-md-linkvalidator/issues",
+    "email": "pedro.mutter1@gmail.com"
+  },
+  "homepage": "https://github.com/estev3s/lib-md-linkvalidator",
+  "keywords": ["markdown", "md", "URL", "link", "validator"],
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.4"
